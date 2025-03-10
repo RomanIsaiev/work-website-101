@@ -3,18 +3,1202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Сексуальне і репродуктивне здоров'я підлітків</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="short-info">
+          <p class="text">Онлайн-курс</p>
+          <p class="text">
+            старт <span id="dateElement"></span>.<span id="monthElement"></span>
+          </p>
+        </div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <h1 class="title">Сексуальне і репродуктивне здоров'я підлітків:</h1>
+          <p class="subtitle">Як допомогти дорослішати?</p>
+          <p class="text">
+            Дізнайтеся, як підтримати підлітка в період дорослішання, щоб стати
+            для нього другом і наставником у складних розмовах про стосунки,
+            здоров'я та сексуальність
+          </p>
+          <ul class="list">
+            <li class="list-item">Готові сценарії для складних розмов</li>
+            <li class="list-item">Без незручних пауз і страху</li>
+            <li class="list-item">Поради від лікаря з 30 річним досвідом</li>
+          </ul>
+          <a class="btn" href=""
+            >Приєднатися <br />
+            <span>зі Знижкою -90%</span></a
+          >
+          <div class="bonus">
+            <h3 class="bonus-title">
+              Встигни приєднатись за кращою ціною та отримати бонуси
+            </h3>
+            <ul class="bonus-list">
+              <li class="bonus-item">
+                <img
+                  src="./src/img/bonus-gift.svg"
+                  alt="bonus gift"
+                  width="36"
+                  height="36"
+                />
+                <p class="bonus-text">
+                  <span>Чек-лист</span> рекомендованих відео для перегляду разом
+                  з підлітками
+                </p>
+              </li>
+              <li class="bonus-item">
+                <img
+                  src="./src/img/bonus-gift.svg"
+                  alt="bonus gift"
+                  width="36"
+                  height="36"
+                />
+                <p class="bonus-text">
+                  <span>ТОП-5</span> інформаційних ресурсів для батьків по
+                  статевому вихованню
+                </p>
+              </li>
+              <li class="bonus-item">
+                <img
+                  src="./src/img/bonus-gift.svg"
+                  alt="bonus gift"
+                  width="36"
+                  height="36"
+                />
+                <p class="bonus-text">
+                  <span>ТОП-5</span> інформаційних ресурсів для підлітків по
+                  сексуальному та репродуктивному здоров’ю
+                </p>
+              </li>
+              <li class="bonus-item">
+                <img
+                  src="./src/img/bonus-gift.svg"
+                  alt="bonus gift"
+                  width="36"
+                  height="36"
+                />
+                <p class="bonus-text">
+                  <span>Можливість</span> потрапити на персональну консультацію
+                  від автора
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="timer-container">
+            <p class="timer-text">[ до закінчення акції ]</p>
+            <div id="countdown-one" class="countdown">
+              <div class="countdown-number">
+                <span class="hours countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="milliseconds countdown-time"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="for-whom">
+        <div class="container">
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/blue-heart-1x.png 1x,
+                    ./src/img/for-whom/blue-heart-2x.png 2x
+                  "
+                  width="36"
+                  height="40" />
+                <img
+                  class="item-image"
+                  src="./src/img/for-whom/blue-heart-1x.png"
+                  alt="heart"
+                  width="36"
+                  height="40"
+              /></picture>
+              <p class="item-text">
+                Ви – мама, тато, вчитель чи соціальний працівник? Не розумієте,
+                що відбувається з вашою дитиною в підлітковому віці?
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/blue-heart-1x.png 1x,
+                    ./src/img/for-whom/blue-heart-2x.png 2x
+                  "
+                  width="36"
+                  height="40" />
+                <img
+                  class="item-image"
+                  src="./src/img/for-whom/blue-heart-1x.png"
+                  alt="heart"
+                  width="36"
+                  height="40"
+              /></picture>
+              <p class="item-text">
+                Не знаєте, як говорити з підлітками про секс, стосунки та їхнє
+                здоров'я?
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/blue-heart-1x.png 1x,
+                    ./src/img/for-whom/blue-heart-2x.png 2x
+                  "
+                  width="36"
+                  height="40" />
+                <img
+                  class="item-image"
+                  src="./src/img/for-whom/blue-heart-1x.png"
+                  alt="heart"
+                  width="36"
+                  height="40"
+              /></picture>
+              <p class="item-text">
+                Хочете допомогти їм ухвалювати правильні рішення без страху та
+                сорому?
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/blue-heart-1x.png 1x,
+                    ./src/img/for-whom/blue-heart-2x.png 2x
+                  "
+                  width="36"
+                  height="40" />
+                <img
+                  class="item-image"
+                  src="./src/img/for-whom/blue-heart-1x.png"
+                  alt="heart"
+                  width="36"
+                  height="40"
+              /></picture>
+              <p class="item-text">
+                Головне – бути поруч, підтримувати та допомагати підлітку
+                розібратися в складних питаннях сексуальності.
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/blue-heart-1x.png 1x,
+                    ./src/img/for-whom/blue-heart-2x.png 2x
+                  "
+                  width="36"
+                  height="40" />
+                <img
+                  class="item-image"
+                  src="./src/img/for-whom/blue-heart-1x.png"
+                  alt="heart"
+                  width="36"
+                  height="40"
+              /></picture>
+              <p class="item-text">
+                Відкритість і довіра у стосунках між батьками та дитиною
+                допоможуть сформувати здорове ставлення до свого тіла, емоцій та
+                сексуального життя.
+              </p>
+            </li>
+          </ul>
+          <img
+            class="heart-arrow-image"
+            src="./src/img/for-whom/arrow-heart.svg"
+            alt="heart"
+            width="60"
+          />
+          <p class="text">
+            Цей курс – ваш надійний путівник у світі підліткової сексуальності!
+          </p>
+        </div>
+      </section>
+      <section class="for-you">
+        <div class="container">
+          <h2 class="title">Цей курс для вас, якщо:</h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/image-01-1x.png 1x,
+                    ./src/img/for-you/image-01-2x.png 2x
+                  "
+                  width="80"
+                  height="80" />
+                <img
+                  class="item-image"
+                  src="./src/img/for-you/image-01-1x.png"
+                  alt="image"
+                  width="80"
+                  height="80"
+              /></picture>
+              <p class="item-text">
+                Якщо ви не знаєте, як правильно говорити з підлітками про
+                стосунки, секс і репродуктивне здоров’я
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/image-02-1x.png 1x,
+                    ./src/img/for-you/image-02-2x.png 2x
+                  "
+                  width="80"
+                  height="80" />
+                <img
+                  class="item-image"
+                  src="./src/img/for-you/image-02-1x.png"
+                  alt="image"
+                  width="80"
+                  height="80"
+              /></picture>
+              <p class="item-text">
+                Вам ніяково або страшно починати розмови на цю тему, і ви
+                боїтеся зіпсувати стосунки з підлітком
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/image-03-1x.png 1x,
+                    ./src/img/for-you/image-03-2x.png 2x
+                  "
+                  width="80"
+                  height="80" />
+                <img
+                  class="item-image"
+                  src="./src/img/for-you/image-03-1x.png"
+                  alt="image"
+                  width="80"
+                  height="80"
+              /></picture>
+              <p class="item-text">
+                Ви самі не впевнені в своїх знаннях про сексуальність,
+                контрацепцію, ІПСШ та згоду на секс
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/image-04-1x.png 1x,
+                    ./src/img/for-you/image-04-2x.png 2x
+                  "
+                  width="80"
+                  height="80" />
+                <img
+                  class="item-image"
+                  src="./src/img/for-you/image-04-1x.png"
+                  alt="image"
+                  width="80"
+                  height="80"
+              /></picture>
+              <p class="item-text">
+                Хвилюєтеся, що ваша дитина дізнається про секс із соцмереж,
+                порно або друзів і отримає спотворену інформацію
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/image-05-1x.png 1x,
+                    ./src/img/for-you/image-05-2x.png 2x
+                  "
+                  width="80"
+                  height="80" />
+                <img
+                  class="item-image"
+                  src="./src/img/for-you/image-05-1x.png"
+                  alt="image"
+                  width="80"
+                  height="80"
+              /></picture>
+              <p class="item-text">
+                Хочете мати достовірну інформацію про безпечну сексуальну
+                поведінку та як уникнути ризиків для здоров’я
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="background-wrapper">
+        <img class="ellipse-1" src="./src/img/bg-wrap/elip-1.svg" alt="decor" />
+        <img class="ellipse-2" src="./src/img/bg-wrap/elip-2.svg" alt="decor" />
+        <img class="ellipse-3" src="./src/img/bg-wrap/elip-3.svg" alt="decor" />
+        <img class="ellipse-4" src="./src/img/bg-wrap/elip-4.svg" alt="decor" />
+        <img class="ellipse-5" src="./src/img/bg-wrap/elip-4.svg" alt="decor" />
+        <img
+          class="img-1"
+          src="./src/img/bg-wrap/img-1.png"
+          alt="decor"
+          width="137"
+        />
+        <img
+          class="img-5"
+          src="./src/img/bg-wrap/img-5.png"
+          alt="decor"
+          width="72"
+        />
+        <img
+          class="img-2"
+          src="./src/img/bg-wrap/img-2.png"
+          alt="decor"
+          width="110"
+        />
+        <img
+          class="img-3"
+          src="./src/img/bg-wrap/img-3.png"
+          alt="decor"
+          width="100"
+        />
+        <img
+          class="img-4"
+          src="./src/img/bg-wrap/img-4.png"
+          alt="decor"
+          width="80"
+        />
+        <section class="about-author">
+          <div class="container">
+            <h2 class="title">АВТОР КУРСУ</h2>
+            <picture
+              ><source
+                srcset="
+                  ./src/img/about-author/author-1x.png 1x,
+                  ./src/img/about-author/author-2x.png 2x
+                "
+                width="320"
+                height="auto" />
+              <img
+                class="author-image"
+                src="./src/img/about-author/author-1x.png"
+                alt="image"
+                width="320"
+                height="auto"
+            /></picture>
+            <h3 class="author-name">ВІКТОРІЯ ВЕРЕНИЧ</h3>
+            <p class="author-city">м. Київ</p>
+            <ul class="desc-list">
+              <li class="list-item">
+                Лікарка гінеколог вищої категорії з досвідом роботи більше 30
+                років
+              </li>
+              <li class="list-item">
+                Національна тренерка з питань надання медико-соціальної допомоги
+                підліткам та молоді
+              </li>
+              <li class="list-item">
+                Більше 20 років - досвід безпосередньої роботи з підлітками в
+                Дружній клініці для молоді . Авторка багатьох тренінгових
+                програм по сексуальному та репродуктивному здоров’ю
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="you-get">
+          <div class="container">
+            <h2 class="title">Що ви отримаєте:</h2>
+            <ul class="list">
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/you-get/image-01-1x.png 1x,
+                      ./src/img/you-get/image-01-2x.png 2x
+                    "
+                    width="45"
+                    height="45" />
+                  <img
+                    class="item-image"
+                    src="./src/img/you-get/image-01-1x.png"
+                    alt="image"
+                    width="45"
+                    height="45"
+                /></picture>
+                <p class="item-text">
+                  <span>Курс складається</span> з 5 модулів, у кожному - по 3
+                  відеоуроки. Тривалість уроків 15-20 хвилин
+                </p>
+              </li>
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/you-get/image-02-1x.png 1x,
+                      ./src/img/you-get/image-02-2x.png 2x
+                    "
+                    width="45"
+                    height="45" />
+                  <img
+                    class="item-image"
+                    src="./src/img/you-get/image-02-1x.png"
+                    alt="image"
+                    width="45"
+                    height="45"
+                /></picture>
+                <p class="item-text">
+                  Після кожного модуля буде запропоноване невеличке
+                  <span>домашнє завдання</span>
+                </p>
+              </li>
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/you-get/image-03-1x.png 1x,
+                      ./src/img/you-get/image-03-2x.png 2x
+                    "
+                    width="45"
+                    height="45" />
+                  <img
+                    class="item-image"
+                    src="./src/img/you-get/image-03-1x.png"
+                    alt="image"
+                    width="45"
+                    height="45"
+                /></picture>
+                <p class="item-text">
+                  <span>Усі презентації</span> <br />
+                  залишаються слухачам назавжди
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="program">
+          <div class="container">
+            <h2 class="title">програма курсу</h2>
+            <div class="program-container">
+              <ul class="program-list list">
+                <li class="program-list-item">
+                  <div class="program-item-title-container">
+                    <div class="program-list-item-container">
+                      <span class="item-lesson">Модуль 1</span>
+                      <h3 class="program-list-item-title">
+                        Розвиток сексуальності у підлітковому віці
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="program-answer-wrapper">
+                    <div class="program-answer-item-wrapper">
+                      <div class="inside-wrapper">
+                        <p class="program-answer-title">Уроки</p>
+                        <ol class="modules-list">
+                          <li class="list-item">
+                            Біологічні, психологічні та соціальні аспекти
+                            статевого дозрівання. <br />
+                            Відмінності у розвитку хлопців та дівчат
+                          </li>
+                          <li class="list-item">
+                            Що таке сексуальність? Етапи формування
+                            сексуальності. сексуальна орієнтація та гендерна
+                            ідентичність
+                          </li>
+                          <li class="list-item">
+                            Особливості підліткової сексуальності
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="open-text-container">
+                    <p class="open-text">Відкрити опис</p>
+                  </div>
+                </li>
+                <li class="program-list-item">
+                  <div class="program-item-title-container">
+                    <div class="program-list-item-container">
+                      <span class="item-lesson">Модуль 2</span>
+                      <h3 class="program-list-item-title">
+                        Як зберегти сексуальне та репродуктивне здоров’я
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="program-answer-wrapper">
+                    <div class="program-answer-item-wrapper">
+                      <div class="inside-wrapper">
+                        <p class="program-answer-title">Уроки</p>
+                        <ol class="modules-list">
+                          <li class="list-item">
+                            Коли настає статева, біологічна, соціальна зрілість.
+                            Початок статевого життя
+                          </li>
+                          <li class="list-item">
+                            Наслідки раннього початку статевого життя. Як
+                            підліткам безпечно реалізовувати сексуальність
+                          </li>
+                          <li class="list-item">Підліткова вагітність</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="open-text-container">
+                    <p class="open-text">Відкрити опис</p>
+                  </div>
+                </li>
+                <li class="program-list-item">
+                  <div class="program-item-title-container">
+                    <div class="program-list-item-container">
+                      <span class="item-lesson">Модуль 3</span>
+                      <h3 class="program-list-item-title">
+                        Контрацепція та профілактика ІПСШ
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="program-answer-wrapper">
+                    <div class="program-answer-item-wrapper">
+                      <div class="inside-wrapper">
+                        <p class="program-answer-title">Уроки</p>
+                        <ol class="modules-list">
+                          <li class="list-item">
+                            Сучасні методи контрацепції: що потрібно знати?
+                            Підліткова контрацепція
+                          </li>
+                          <li class="list-item">
+                            Безпечна сексуальна поведінка та відповідальне
+                            ставлення до свого здоров’я
+                          </li>
+                          <li class="list-item">
+                            Що таке згода на секс? Повага до власного тіла та
+                            особисті кордони
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="open-text-container">
+                    <p class="open-text">Відкрити опис</p>
+                  </div>
+                </li>
+                <li class="program-list-item">
+                  <div class="program-item-title-container">
+                    <div class="program-list-item-container">
+                      <span class="item-lesson">Модуль 4</span>
+                      <h3 class="program-list-item-title">
+                        Розмови про секс із підлітками. Методи ефективного
+                        спілкування
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="program-answer-wrapper">
+                    <div class="program-answer-item-wrapper">
+                      <div class="inside-wrapper">
+                        <p class="program-answer-title">Уроки</p>
+                        <ol class="modules-list">
+                          <li class="list-item">
+                            Міфи та реальність про підлітковий секс і здоров’я.
+                            Правила безпеки в інтернеті - сучасні реалії
+                          </li>
+                          <li class="list-item">
+                            Як говорити з підлітками про секс без сорому та
+                            незручності? Як відповідати на складні запитання
+                            підлітків?
+                          </li>
+                          <li class="list-item">
+                            Сексуальне виховання. Коли починати та про що
+                            говорити адекватно віку дитини/підлітка
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="open-text-container">
+                    <p class="open-text">Відкрити опис</p>
+                  </div>
+                </li>
+                <li class="program-list-item">
+                  <div class="program-item-title-container">
+                    <div class="program-list-item-container">
+                      <span class="item-lesson">Модуль 5</span>
+                      <h3 class="program-list-item-title">
+                        Самооцінка, тіло і сексуальність
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="program-answer-wrapper">
+                    <div class="program-answer-item-wrapper">
+                      <div class="inside-wrapper">
+                        <p class="program-answer-title">Уроки</p>
+                        <ol class="modules-list">
+                          <li class="list-item">
+                            Як уникнути комплексів щодо власного тіла?
+                          </li>
+                          <li class="list-item">
+                            Вплив соціальних стандартів краси на самооцінку
+                          </li>
+                          <li class="list-item">
+                            Як сексуальна освіта сприяє розвитку
+                            дитини/підлітка?
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="open-text-container">
+                    <p class="open-text">Відкрити опис</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="price-container">
+              <p class="price">490грн &nbsp;&nbsp;<span>4900грн</span></p>
+              <div class="line-through"></div>
+            </div>
+            <a class="btn" href=""
+              >Приєднатися <br />
+              <span>зі Знижкою -90%</span></a
+            >
+            <div class="bonus">
+              <h3 class="bonus-title">
+                Встигни приєднатись за кращою ціною та отримати бонуси
+              </h3>
+              <ul class="bonus-list">
+                <li class="bonus-item">
+                  <img
+                    src="./src/img/bonus-gift.svg"
+                    alt="bonus gift"
+                    width="36"
+                    height="36"
+                  />
+                  <p class="bonus-text">
+                    <span>Чек-лист</span> рекомендованих відео для перегляду
+                    разом з підлітками
+                  </p>
+                </li>
+                <li class="bonus-item">
+                  <img
+                    src="./src/img/bonus-gift.svg"
+                    alt="bonus gift"
+                    width="36"
+                    height="36"
+                  />
+                  <p class="bonus-text">
+                    <span>ТОП-5</span> інформаційних ресурсів для батьків по
+                    статевому вихованню
+                  </p>
+                </li>
+                <li class="bonus-item">
+                  <img
+                    src="./src/img/bonus-gift.svg"
+                    alt="bonus gift"
+                    width="36"
+                    height="36"
+                  />
+                  <p class="bonus-text">
+                    <span>ТОП-5</span> інформаційних ресурсів для підлітків по
+                    сексуальному та репродуктивному здоров’ю
+                  </p>
+                </li>
+                <li class="bonus-item">
+                  <img
+                    src="./src/img/bonus-gift.svg"
+                    alt="bonus gift"
+                    width="36"
+                    height="36"
+                  />
+                  <p class="bonus-text">
+                    <span>Можливість</span> потрапити на персональну
+                    консультацію від автора
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="timer-container">
+              <p class="timer-text">[ до закінчення акції ]</p>
+              <div id="countdown-two" class="countdown">
+                <div class="countdown-number">
+                  <span class="hours countdown-time"></span>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="minutes countdown-time"></span>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="seconds countdown-time"></span>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="milliseconds countdown-time"></span>
+                </div>
+              </div>
+            </div>
+            <p class="garant-text">
+              На курс діє гарантія безумовного повернення коштів протягом 14
+              днів
+            </p>
+          </div>
+        </section>
+      </div>
+      <section class="how-study">
+        <div class="container">
+          <h2 class="title">Як відбувається навчання?</h2>
+          <div class="study-wrapper">
+            <img
+              class="study-arrow-01"
+              src="./src/img/after-study/arrow-item.svg"
+              alt="arrow"
+            />
+            <img
+              class="study-arrow-02"
+              src="./src/img/after-study/arrow-item.svg"
+              alt="arrow"
+            />
+            <ul class="list">
+              <li class="list-item">
+                <p class="item-number">1</p>
+                <p class="item-text">
+                  Після оплати ви отримаєте доступ до навчальної платформи з
+                  відеоуроками на вказану вами електронну адресу
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">2</p>
+                <p class="item-text">
+                  Переглядати уроки можна буде у власному темпі
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">3</p>
+                <p class="item-text">
+                  Доступ до відеоуроків зберігається впродовж 3 місяців, щоб
+                  курс можна було переглядати за потреби
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="price-container">
+            <p class="price black">490грн &nbsp;&nbsp;<span>4900грн</span></p>
+            <div class="line-through"></div>
+          </div>
+          <a class="btn" href=""
+            >Приєднатися <br />
+            <span>зі Знижкою -90%</span></a
+          >
+        </div>
+      </section>
+      <section class="after-study">
+        <div class="container">
+          <h2 class="title">Результати після навчання</h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/after-study/image-01-1x.png 1x,
+                    ./src/img/after-study/image-01-2x.png 2x
+                  " />
+                <img
+                  class="item-image"
+                  src="./src/img/after-study/image-01-1x.png"
+                  alt="image"
+              /></picture>
+              <p class="item-text">
+                Готові сценарії розмов із підлітками без незручності
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/after-study/image-02-1x.png 1x,
+                    ./src/img/after-study/image-02-2x.png 2x
+                  " />
+                <img
+                  class="item-image"
+                  src="./src/img/after-study/image-02-1x.png"
+                  alt="image"
+              /></picture>
+              <p class="item-text">
+                Розуміння, як формується сексуальність, які особливості
+                підліткової сексуальної поведінки
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/after-study/image-03-1x.png 1x,
+                    ./src/img/after-study/image-03-2x.png 2x
+                  " />
+                <img
+                  class="item-image"
+                  src="./src/img/after-study/image-03-1x.png"
+                  alt="image"
+              /></picture>
+              <p class="item-text">
+                Достовірну інформацію про контрацепцію, ІПСШ та репродуктивне
+                здоров’я
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/after-study/image-04-1x.png 1x,
+                    ./src/img/after-study/image-04-2x.png 2x
+                  " />
+                <img
+                  class="item-image"
+                  src="./src/img/after-study/image-04-1x.png"
+                  alt="image"
+              /></picture>
+              <p class="item-text">
+                Навички ефективного спілкування та підтримки підлітків у
+                складних питаннях про сексуальне здоров’я
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/after-study/image-05-1x.png 1x,
+                    ./src/img/after-study/image-05-2x.png 2x
+                  " />
+                <img
+                  class="item-image"
+                  src="./src/img/after-study/image-05-1x.png"
+                  alt="image"
+              /></picture>
+              <p class="item-text">
+                Відповіді на складні запитання: "Коли починати говорити про
+                секс?", "Що таке згода на секс?", "Що таке безпечна сексуальна
+                поведінка?", "Які наслідки раннього початку статевого життя?"
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/after-study/image-06-1x.png 1x,
+                    ./src/img/after-study/image-06-2x.png 2x
+                  " />
+                <img
+                  class="item-image"
+                  src="./src/img/after-study/image-06-1x.png"
+                  alt="image"
+              /></picture>
+              <p class="item-text">
+                Чек-листи та матеріали - джерела достовірної інформації,
+                посилання на ресурси, які залишаться у вас навіть після
+                завершення курсу
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="background-rev-footer">
+        <img class="review-bg" src="./src/img/reviews-heart.svg" alt="decor" />
+        <img
+          class="footer-green"
+          src="./src/img/footer/bg-green-el.svg"
+          alt="green"
+        />
+        <img
+          class="footer-blue"
+          src="./src/img/footer/bg-blue-el.svg"
+          alt="blue"
+        />
+        <section class="reviews">
+          <div class="container">
+            <div class="title-container">
+              <h2 class="title">відгуки</h2>
+            </div>
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-03-1x.png 1x,
+                        ./src/img/reviews/review-03-2x.png 2x
+                      "
+                      width="320"
+                      height="auto" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-03-1x.png"
+                      alt="review"
+                      width="320"
+                      height="auto"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-02-1x.png 1x,
+                        ./src/img/reviews/review-02-2x.png 2x
+                      "
+                      width="320"
+                      height="auto" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-02-1x.png"
+                      alt="review"
+                      width="320"
+                      height="auto"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-01-1x.png 1x,
+                        ./src/img/reviews/review-01-2x.png 2x
+                      "
+                      width="320"
+                      height="auto" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-01-1x.png"
+                      alt="review"
+                      width="320"
+                      height="auto"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-04-1x.png 1x,
+                        ./src/img/reviews/review-04-2x.png 2x
+                      "
+                      width="320"
+                      height="auto" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-04-1x.png"
+                      alt="review"
+                      width="320"
+                      height="auto"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-05-1x.png 1x,
+                        ./src/img/reviews/review-05-2x.png 2x
+                      "
+                      width="320"
+                      height="auto" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-05-1x.png"
+                      alt="review"
+                      width="320"
+                      height="auto"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-06-1x.png 1x,
+                        ./src/img/reviews/review-06-2x.png 2x
+                      "
+                      width="320"
+                      height="auto" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-06-1x.png"
+                      alt="review"
+                      width="320"
+                      height="auto"
+                  /></picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <div class="container">
+            <h2 class="title">відповіді на запитання</h2>
+            <div class="questions-container">
+              <ul class="questions-list list">
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Цей курс дійсно потрібен мені?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        Так, якщо ви хочете розуміти що відбувається з
+                        підлітками під час статевого дозрівання, як навчити їх
+                        безпечно реалізовувати свою сексуальність в процесі її
+                        формування. Після курсу ви будете розуміти,як ефективно
+                        спілкуватись із підлітками на тему сексуальності та
+                        відверто відповідати на їх питання.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Чи потрібно мені купувати курс, я можу знайти всю цю
+                      інформацію безкоштовно в інтернеті?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        Дійсно, в інтернеті є безліч інформації на дану тему.
+                        Придбавши курс ви отримаєте вже ретельно підібрану,
+                        основну, достовірну  інформацію від фахівця, в
+                        доступному форматі. Також на вас чекають  практичні
+                        поради, готові сценарії розмов, цікаві  кейси з
+                        особистого досвіду консультування підлітків.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Чи зможу я поставити свої запитання?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        По закінченню курсу відбудеться онлайн-сесія, де ви
+                        зможете поставити свої запитання.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Чи можу я повернути кошти, якщо курс не відповідає моїм
+                      очікуванням?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        Так. У вас є 14 днів. Якщо ви вирішите, що курс не
+                        відповідає вашим очікуванням - ми повернемо вам гроші.
+                        <br />
+                        <br />
+                        Приєднуйтесь до курсу за спеціальною ціною, яка діє лише
+                        зараз - всього за 490 грн <br /><br />
+                        Не варто довго думати. Пропозицію обмежено, а ваші діти
+                        ростуть і чекають вашої підтримки на шляху дорослішання.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="footer">
+          <div class="container">
+            <!-- <ul class="socials-links">
+              <li class="links-item">
+                <a href="" target="_blank" rel="nofollow">INSTAGRAM</a>
+              </li>
+              <li class="links-item">
+                <a href="" target="_blank" rel="nofollow">FACEBOOK</a>
+              </li>
+            </ul> -->
+            <div class="fop-box">
+              <p class="name">фоп імʼя прізвище</p>
+              <p class="code">іпн 00000000</p>
+            </div>
+            <a class="mail-link" href="mailto:"
+              ><div class="mail-box">
+                <img src="./src/img/mail.svg" alt="mail" />
+                <p class="mail">пошта</p>
+              </div></a
+            >
+            <div class="deals-box">
+              <a
+                href=""
+                target="_blank"
+                rel="nofollow"
+                class="deals-link public"
+                >публічна оферта</a
+              >
+              <a
+                href=""
+                target="_blank"
+                rel="nofollow"
+                class="deals-link confidence"
+                >політика конфідеційності</a
+              >
+            </div>
+            <a
+              class="dising-creator"
+              href="https://www.instagram.com/lisabardadym"
+              target="_blank"
+              rel="nofollow"
+            >
+              <div class="creator-box">
+                <img
+                  src="./src/img/insta.svg"
+                  alt="insta"
+                  height="27"
+                  width="27"
+                />
+                <h3 class="creator-name">
+                  розробка сайту <br /><span>lisa bardadym</span>
+                </h3>
+              </div></a
+            >
+          </div>
+        </section>
+      </div>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/program.js" type="module"></script>
+    <script src="./src/js/changeDate.js" type="module"></script>
+    <script src="./src/js/questions.js" type="module"></script>
+    <script src="./src/js/swiper.js" type="module"></script>
   </body>
 </html>
