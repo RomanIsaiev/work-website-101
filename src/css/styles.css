@@ -1188,6 +1188,8 @@
 
 .footer {
   padding-bottom: 60px;
+  position: relative;
+  z-index: 1000;
 }
 
 .socials-links {
